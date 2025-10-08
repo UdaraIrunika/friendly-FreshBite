@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | FreshBite Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/main.css">
+    <link rel="stylesheet" href="assest/css/menu.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    FreshBite
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="signin.html"><button class="btn btn-secondary"> Sign In</button></a>
+                    <button class="btn btn-primary">Order Now</button>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Delicious Menu</h1>
+            <p>Explore our wide variety of dishes made with fresh ingredients and delivered to your door</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                <button class="filter-btn" data-filter="mains">Main Courses</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+                <button class="filter-btn" data-filter="specials">Specials</button>
+            </div>
+            
+            <div class="menu-search">
+                <input type="text" placeholder="Search for dishes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <!-- Appetizers -->
+            <div class="menu-category" id="appetizers">
+                <h2 class="category-title">Appetizers</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Garlic Bread">
+                        </div>
+                        <div class="item-badge">Popular</div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Garlic Bread</h3>
+                                <span class="item-price">$6.99</span>
+                            </div>
+                            <p class="item-description">Freshly baked bread with garlic butter and herbs</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1626700051175-6818013e0331?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Mozzarella Sticks">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Mozzarella Sticks</h3>
+                                <span class="item-price">$8.99</span>
+                            </div>
+                            <p class="item-description">Breaded and fried mozzarella cheese with marinara sauce</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(95)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Chicken Wings">
+                        </div>
+                        <div class="item-badge">Spicy</div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Buffalo Wings</h3>
+                                <span class="item-price">$12.99</span>
+                            </div>
+                            <p class="item-description">Crispy chicken wings tossed in spicy buffalo sauce with celery sticks and ranch dip</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(210)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Courses -->
+            <div class="menu-category" id="mains">
+                <h2 class="category-title">Main Courses</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Classic Cheeseburger">
+                        </div>
+                        <div class="item-badge">Chef's Choice</div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Classic Cheeseburger</h3>
+                                <span class="item-price">$14.99</span>
+                            </div>
+                            <p class="item-description">Juicy beef patty with cheese, lettuce, tomato, and special sauce on a brioche bun</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(342)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Pepperoni Pizza">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Pepperoni Pizza</h3>
+                                <span class="item-price">$18.99</span>
+                            </div>
+                            <p class="item-description">Classic pizza with mozzarella cheese, pepperoni, and tomato sauce</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(415)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Creamy Alfredo Pasta">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Creamy Alfredo Pasta</h3>
+                                <span class="item-price">$16.99</span>
+                            </div>
+                            <p class="item-description">Fettuccine pasta with creamy alfredo sauce and parmesan cheese</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(278)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="mains">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1606755962773-d324e7452a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Grilled Salmon">
+                        </div>
+                        <div class="item-badge">Healthy</div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Grilled Salmon</h3>
+                                <span class="item-price">$22.99</span>
+                            </div>
+                            <p class="item-description">Fresh salmon fillet grilled to perfection with lemon butter sauce and seasonal vegetables</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(189)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-category" id="desserts">
+                <h2 class="category-title">Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Chocolate Cake">
+                        </div>
+                        <div class="item-badge">Sweet</div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Chocolate Lava Cake</h3>
+                                <span class="item-price">$8.99</span>
+                            </div>
+                            <p class="item-description">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(312)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="desserts">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Cheesecake">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">New York Cheesecake</h3>
+                                <span class="item-price">$7.99</span>
+                            </div>
+                            <p class="item-description">Creamy cheesecake with graham cracker crust and berry compote</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(267)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Beverages -->
+            <div class="menu-category" id="beverages">
+                <h2 class="category-title">Beverages</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Fresh Lemonade">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Fresh Lemonade</h3>
+                                <span class="item-price">$4.99</span>
+                            </div>
+                            <p class="item-description">Homemade lemonade with fresh lemons and a hint of mint</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>(156)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="beverages">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=80" alt="Iced Coffee">
+                        </div>
+                        <div class="item-info">
+                            <div class="item-header">
+                                <h3 class="item-title">Iced Caramel Macchiato</h3>
+                                <span class="item-price">$5.99</span>
+                            </div>
+                            <p class="item-description">Espresso with milk, vanilla syrup, and caramel drizzle over ice</p>
+                            <div class="item-footer">
+                                <div class="item-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>(203)</span>
+                                </div>
+                                <button class="add-to-cart">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message" style="text-align: center; padding: 40px 20px; color: #666;">
+                <i class="fas fa-shopping-cart" style="font-size: 48px; margin-bottom: 15px; opacity: 0.5;"></i>
+                <p>Your cart is empty</p>
+                <p style="font-size: 14px; margin-top: 10px;">Add some delicious items from our menu</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FreshBite</h3>
+                    <p>Delivering delicious food to your doorstep with speed and care.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> support@freshbite.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FreshBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assest/js/script.js"></script>
+</body>
+</html>
