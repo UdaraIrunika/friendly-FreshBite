@@ -33,6 +33,8 @@ A modern and user-friendly food delivery web application **template** built with
 
 FreshBite is a comprehensive food delivery platform **template** that provides a ready-to-use frontend interface connecting customers with restaurants. Built with core web technologies, this template demonstrates modern web development practices including responsive design, form layouts, and interactive UI components.
 
+Visit Demo Site : https://friendly-fresh-bite.vercel.app/
+
 **Perfect for:**
 - Learning web development fundamentals
 - Starting a food delivery project
