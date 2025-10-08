@@ -1,5 +1,8 @@
 # FreshBite 🍔
 
+![applogo](https://github.com/user-attachments/assets/836a5e61-d7a5-4831-8ea7-0fc75a897281)
+
+
 A modern and user-friendly food delivery web application **template** built with vanilla **HTML**, **CSS**, and **JavaScript**. FreshBite provides a ready-to-use interface for customers to browse menus, order food, and manage their accounts, while also offering partner registration for restaurants.
 
 > **Note:** This is a frontend template/UI design. Backend functionality and database integration are not included.
@@ -180,18 +183,18 @@ friendly-FreshBite/
 
 To turn this template into a fully functional application, consider adding:
 
-- 🔐 Backend integration with database (MongoDB/MySQL)
-- 🔒 Real authentication and user management system
-- 💳 Payment gateway integration (Stripe/PayPal)
-- 📍 GPS location tracking for delivery
-- 🚚 Real-time order tracking system
-- ⭐ Restaurant ratings and reviews functionality
-- 🔔 Push notifications for order updates
-- 📧 Email confirmation and receipt system
-- 🎁 Promo codes and discount system
-- 📊 User order history dashboard
-- 🌐 Multi-language support
-- 🔄 API integration for dynamic data
+- 🔐 Backend integration with database (MongoDB/MySQL) (Not added yet)
+- 🔒 Real authentication and user management system (Not added yet)
+- 💳 Payment gateway integration (Stripe/PayPal) (Not added yet)
+- 📍 GPS location tracking for delivery (Not added yet)
+- 🚚 Real-time order tracking system (Not added yet)
+- ⭐ Restaurant ratings and reviews functionality (Not added yet)
+- 🔔 Push notifications for order updates (Not added yet)
+- 📧 Email confirmation and receipt system (Not added yet)
+- 🎁 Promo codes and discount system (Not added yet)
+- 📊 User order history dashboard (Not added yet)
+- 🌐 Multi-language support (Not added yet)
+- 🔄 API integration for dynamic data (Not added yet)
 
 ---
 
