@@ -100,24 +100,33 @@ FreshBite is a comprehensive food delivery platform **template** that provides a
 ```
 friendly-FreshBite/
 ├── index.html              # Main landing page
-├── login.html             # User login page
+├── signin.html             # User login page
 ├── signup.html            # User registration page
-├── partner-register.html  # Restaurant partner registration
+├── patner.html  # Restaurant partner registration
 ├── menu.html              # Food menu/catalog page
-├── cart.html              # Shopping cart page
-├── css/
-│   ├── style.css         # Main stylesheet
-│   ├── responsive.css    # Responsive design rules
-│   └── components.css    # Component-specific styles
-├── js/
-│   ├── main.js           # Main application logic
-│   ├── cart.js           # Shopping cart functionality
-│   ├── auth.js           # Authentication logic
-│   └── search.js         # Search functionality
-├── images/               # Image assets
-│   ├── food/            # Food item images
-│   └── icons/           # UI icons
-├── assets/              # Additional assets
+├── how-it-works.html              # instruction page
+├── about.html              # about page
+├── contact.html              # about page
+├── assest/css/
+│   ├── main.css         # Main stylesheet
+│   ├── about.css        # about stylsheet
+│   └── contactus.css    # contatc styles
+│   └── hero.css         # hero styles
+│   └── howitwork.css    # howitwork styles
+│   └── menu.css         # menu styles
+│   └── patner.css       # patner styles
+│   └── signin.css       # signin styles
+│   └── signup.css       # signup styles
+├── assest/js/
+│   ├── contct.js        # contct
+│   ├── howwork.js
+│   ├── partner.js       # partner
+│   └── script.js        # main
+│   └── signin.js        # signin function
+│   └── signup.js        # signup function
+├── assest/img/               # Image assets
+│   ├── img/             # Food app images
+│       ├── logo.jpg          
 └── README.md            # Project documentation
 ```
 
