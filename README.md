@@ -166,8 +166,6 @@ friendly-FreshBite/
 
 ---
 
-### 📱 Mobile View
-
 | ![Mobile Nav](https://github.com/user-attachments/assets/416c3b02-cccc-45c3-ac40-570d69ec0f41) | ![Mobile Hero](https://github.com/user-attachments/assets/a171c594-df30-4ed9-a46d-6790b09cebe2) | ![Mobile Menu](https://github.com/user-attachments/assets/8309eebb-e0e8-4996-8c6e-302f711a6238) |
 |:---:|:---:|:---:|
 | **Navigation Bar** | **Hero Section** | **Menu Section** |
