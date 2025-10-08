@@ -156,80 +156,25 @@ friendly-FreshBite/
 
 ## Screenshots
 
-<section class="project-showcase">
-  <div class="container">
-    <h2>🍔 FreshBite – Food Delivery Website UI</h2>
-    <p>
-      A modern and responsive food delivery website design built with HTML, CSS, and JavaScript.
-      This showcase displays the full layout from desktop to mobile views.
-    </p>
+---
 
-    <!-- Desktop View -->
-    <h3>💻 Desktop View</h3>
-    <div class="screenshot-grid desktop">
-      <img src="https://github.com/user-attachments/assets/21c73851-a84b-434b-aca7-d9fd6ff2a279" alt="Desktop Hero Section" />
-      <img src="https://github.com/user-attachments/assets/6a85063d-7928-4fb8-9981-e79de17fcf2b" alt="Desktop Features and Dishes" />
-      <img src="https://github.com/user-attachments/assets/6b2e62e4-e0cd-4fa5-a799-28f300245c3f" alt="Desktop Testimonials Section" />
-    </div>
+### 💻 Desktop View
 
-    <!-- Mobile View -->
-    <h3>📱 Mobile View</h3>
-    <div class="screenshot-grid mobile">
-      <img src="https://github.com/user-attachments/assets/416c3b02-cccc-45c3-ac40-570d69ec0f41" alt="Mobile Navigation" />
-      <img src="https://github.com/user-attachments/assets/a171c594-df30-4ed9-a46d-6790b09cebe2" alt="Mobile Hero Section" />
-      <img src="https://github.com/user-attachments/assets/8309eebb-e0e8-4996-8c6e-302f711a6238" alt="Mobile Menu Section" />
-      <img src="https://github.com/user-attachments/assets/a50eb211-90e6-49e1-8486-6d03765b02d9" alt="Mobile Dishes Section" />
-      <img src="https://github.com/user-attachments/assets/ec2127c6-b8b5-45d1-aec2-1aeb879183f8" alt="Mobile Footer Section" />
-    </div>
-  </div>
-</section>
+| ![Hero Section](https://github.com/user-attachments/assets/21c73851-a84b-434b-aca7-d9fd6ff2a279) | ![Features and Dishes](https://github.com/user-attachments/assets/6a85063d-7928-4fb8-9981-e79de17fcf2b) | ![Testimonials](https://github.com/user-attachments/assets/6b2e62e4-e0cd-4fa5-a799-28f300245c3f) |
+|:---:|:---:|:---:|
+| **Hero Section** | **Features & Dishes** | **Testimonials Section** |
 
-<style>
-  .project-showcase {
-    font-family: "Poppins", sans-serif;
-    padding: 40px;
-    background: #fafafa;
-  }
-  .project-showcase h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #333;
-  }
-  .project-showcase p {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    color: #666;
-  }
-  .project-showcase h3 {
-    margin: 40px 0 20px;
-    color: #444;
-    text-align: center;
-  }
-  .screenshot-grid {
-    display: grid;
-    gap: 20px;
-    justify-content: center;
-  }
-  .desktop {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-  .mobile {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-  .screenshot-grid img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  .screenshot-grid img:hover {
-    transform: scale(1.03);
-  }
-</style>
+---
 
+### 📱 Mobile View
 
+| ![Mobile Nav](https://github.com/user-attachments/assets/416c3b02-cccc-45c3-ac40-570d69ec0f41) | ![Mobile Hero](https://github.com/user-attachments/assets/a171c594-df30-4ed9-a46d-6790b09cebe2) | ![Mobile Menu](https://github.com/user-attachments/assets/8309eebb-e0e8-4996-8c6e-302f711a6238) |
+|:---:|:---:|:---:|
+| **Navigation Bar** | **Hero Section** | **Menu Section** |
+
+| ![Mobile Dishes](https://github.com/user-attachments/assets/a50eb211-90e6-49e1-8486-6d03765b02d9) | ![Mobile Footer](https://github.com/user-attachments/assets/ec2127c6-b8b5-45d1-aec2-1aeb879183f8) |
+|:---:|:---:|
+| **Dishes Section** | **Footer Section** |
 
 ---
 
