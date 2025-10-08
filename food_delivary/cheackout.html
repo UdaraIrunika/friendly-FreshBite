@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FreshBite Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assest/css/main.css">
+    <link rel="stylesheet" href="assest/css/checkout.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-utensils"></i>
+                    FreshBite
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Header -->
+    <section class="checkout-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <p>Review your order and complete your purchase</p>
+        </div>
+    </section>
+
+    <!-- Checkout Progress -->
+    <section class="checkout-progress">
+        <div class="container">
+            <div class="progress-steps">
+                <div class="progress-step completed">
+                    <div class="step-number">1</div>
+                    <div class="step-label">Cart</div>
+                    <div class="progress-connector"></div>
+                </div>
+                <div class="progress-step completed">
+                    <div class="step-number">2</div>
+                    <div class="step-label">Delivery</div>
+                    <div class="progress-connector"></div>
+                </div>
+                <div class="progress-step active">
+                    <div class="step-number">3</div>
+                    <div class="step-label">Payment</div>
+                    <div class="progress-connector"></div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">4</div>
+                    <div class="step-label">Confirmation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-content">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-main">
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <div class="summary-header">
+                            <h2>Your Order</h2>
+                            <a href="menu.html" class="edit-cart">Edit Cart</a>
+                        </div>
+                        
+                        <div class="order-items">
+                            <!-- Cart items will be dynamically populated -->
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Delivery Fee</span>
+                                <span>$2.99</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Service Fee</span>
+                                <span>$1.50</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Tax</span>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="total-row final">
+                                <span>Total</span>
+                                <span>$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Delivery Information -->
+                    <div class="checkout-form">
+                        <form id="checkoutForm">
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <div class="section-icon">
+                                        <i class="fas fa-truck"></i>
+                                    </div>
+                                    <h3 class="section-title">Delivery Information</h3>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="deliveryAddress">Delivery Address</label>
+                                    <input type="text" id="deliveryAddress" class="form-control" value="123 Main Street, Apt 4B" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="deliveryInstructions">Delivery Instructions (Optional)</label>
+                                        <input type="text" id="deliveryInstructions" class="form-control" placeholder="e.g., Leave at door, ring bell">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactNumber">Contact Number</label>
+                                        <input type="tel" id="contactNumber" class="form-control" value="(555) 123-4567" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Delivery Option</label>
+                                    <div class="delivery-options">
+                                        <div class="delivery-option selected">
+                                            <div class="option-header">
+                                                <span class="option-name">Standard Delivery</span>
+                                                <span class="option-price">$2.99</span>
+                                            </div>
+                                            <div class="option-desc">30-45 minutes</div>
+                                        </div>
+                                        <div class="delivery-option">
+                                            <div class="option-header">
+                                                <span class="option-name">Express Delivery</span>
+                                                <span class="option-price">$4.99</span>
+                                            </div>
+                                            <div class="option-desc">20 minutes or less</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Payment Information -->
+                            <div class="form-section">
+                                <div class="section-header">
+                                    <div class="section-icon">
+                                        <i class="fas fa-credit-card"></i>
+                                    </div>
+                                    <h3 class="section-title">Payment Method</h3>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="payment-methods">
+                                        <div class="payment-method selected" data-method="card">
+                                            <div class="payment-icon">
+                                                <i class="far fa-credit-card"></i>
+                                            </div>
+                                            <div class="payment-name">Credit/Debit Card</div>
+                                        </div>
+                                        <div class="payment-method" data-method="paypal">
+                                            <div class="payment-icon">
+                                                <i class="fab fa-paypal"></i>
+                                            </div>
+                                            <div class="payment-name">PayPal</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-form active">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="cardholderName">Cardholder Name</label>
+                                        <input type="text" id="cardholderName" class="form-control" placeholder="John Doe" required>
+                                    </div>
+                                    
+                                    <div class="card-row">
+                                        <div class="form-group">
+                                            <label for="expiryDate">Expiry Date</label>
+                                            <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" class="form-control" placeholder="123" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="promo-code">
+                                        <input type="text" class="promo-input" placeholder="Promo code">
+                                        <button type="button" class="apply-promo">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Order Summary Sidebar -->
+                <div class="order-sidebar">
+                    <h3 class="sidebar-title">Order Summary</h3>
+                    
+                    <div class="restaurant-info">
+                        <div class="restaurant-image">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Burger Palace">
+                        </div>
+                        <div class="restaurant-details">
+                            <h3>Burger Palace</h3>
+                            <p>American • $$ • 4.5 ★</p>
+                        </div>
+                    </div>
+                    
+                    <div class="estimated-delivery">
+                        <div class="delivery-time">
+                            <span class="time-label">Estimated Delivery</span>
+                            <span class="time-value">25-40 min</span>
+                        </div>
+                        <div class="delivery-address">
+                            123 Main Street, Apt 4B, New York, NY 10001
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-totals">
+                        <div class="sidebar-total-row">
+                            <span>Items (0)</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="sidebar-total-row">
+                            <span>Delivery</span>
+                            <span>$2.99</span>
+                        </div>
+                        <div class="sidebar-total-row">
+                            <span>Service Fee</span>
+                            <span>$1.50</span>
+                        </div>
+                        <div class="sidebar-total-row">
+                            <span>Tax</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="sidebar-total-row final">
+                            <span>Total</span>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                    
+                    <button class="place-order-btn">
+                        <i class="fas fa-lock"></i>
+                        Place Order
+                    </button>
+                    
+                    <div class="security-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        Your payment information is secure and encrypted
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FreshBite</h3>
+                    <p>Delivering delicious food to your doorstep with speed and care.</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Food Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> support@freshbite.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FreshBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assest/js/checkout.js"></script>
+</body>
+</html>
