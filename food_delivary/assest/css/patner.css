@@ -1,0 +1,443 @@
+/* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, rgba(255,107,107,0.1) 0%, rgba(78,205,196,0.1) 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .page-header p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background-color: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255,107,107,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--primary-color);
+            font-size: 36px;
+        }
+
+        .benefit-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #666;
+        }
+
+        /* Partnership Types */
+        .partnership-types {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .types-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .type-card {
+            background-color: #f9f9f9;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .type-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .type-card.featured {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .type-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .type-card.featured .type-icon {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .type-card.featured h3, .type-card.featured p, .type-card.featured .type-price {
+            color: white;
+        }
+
+        .type-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255,107,107,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--primary-color);
+            font-size: 30px;
+        }
+
+        .type-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .type-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .type-card.featured p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .type-price {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .type-features {
+            list-style: none;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .type-features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .type-features i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .type-card.featured .type-features i {
+            color: white;
+        }
+
+        /* How It Works */
+        .partner-process {
+            padding: 80px 0;
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background-color: #eee;
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0 auto 20px;
+        }
+
+        .process-step h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .process-step p {
+            color: #666;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        /* Partner Form */
+        .partner-form-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .form-info {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-info h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+
+        .form-info p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-list i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .partner-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .partner-form h3 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: var(--dark-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-submit {
+            margin-top: 30px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-question {
+            background-color: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #f5f5f5;
+        }
+
+        .faq-question i {
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            background-color: white;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background-color: white;
+            color: var(--dark-color);
+        }
+
+        .btn-white:hover {
+            background-color: #f5f5f5;
+        }
+
+        .btn-outline-white {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline-white:hover {
+            background-color: white;
+            color: var(--dark-color);
+        }
